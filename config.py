@@ -9,14 +9,14 @@ from logging.handlers import RotatingFileHandler
 
 
 
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-APP_ID = int(os.environ.get("APP_ID", ""))
-API_HASH = os.environ.get("API_HASH", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7495108091:AAEMDbgD6Xfwi1jHZX8B0qATYCXvInjFZTI")
+APP_ID = int(os.environ.get("APP_ID", "23336308"))
+API_HASH = os.environ.get("API_HASH", "884c5a2f4583f875d9d021b222e1d752")
 
 
 OWNER = os.environ.get("OWNER", "GhostParadis3") #Owner username
-OWNER_ID = int(os.environ.get("OWNER_ID", "")) #Owner user id
-DB_URL = os.environ.get("DB_URL", "")
+OWNER_ID = int(os.environ.get("OWNER_ID", "6831947029")) #Owner user id
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://Theon:Aai5@cluster0.txftd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "Cluster0")
 
 
@@ -41,7 +41,7 @@ START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store privat
 
 try:
     ADMINS=[6020516635]
-    for x in (os.environ.get("ADMINS", "").split()):
+    for x in (os.environ.get("ADMINS", "6831947029 5324831370 6444128136").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
